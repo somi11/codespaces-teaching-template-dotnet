@@ -10,16 +10,22 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+//if (app.Environment.IsDevelopment())
+//{
+   // app.UseSwagger();
+   // app.UseSwaggerUI();
+//}
+
+//app.UseHttpsRedirection();
+
+//app.UseAuthorization();
+
+//app.MapControllers();
+
+// lets use app.run to send hello world response in ever request
+app.Run(async context =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
+    await context.Response.WriteAsync("Hello World!");
+});
 
 app.Run();
