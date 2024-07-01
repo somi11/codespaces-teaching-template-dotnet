@@ -1,0 +1,9 @@
+namespace MyApiApp {
+    public class PointOfIntrestDTO {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Description { get; set; }
+
+        public ICollection<PointOfIntrestDTO> PointsOfIntrest { get; set; } = new List<PointOfIntrestDTO>();
+    }
+}
