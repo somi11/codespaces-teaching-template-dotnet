@@ -1,3 +1,5 @@
+using MyApiApp.Models;
+
 namespace MyApiApp
 {
     public class CitiesDataStore {

@@ -1,4 +1,4 @@
-namespace MyApiApp {
+namespace MyApiApp.Models {
     public class PointOfIntrestDTO {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;

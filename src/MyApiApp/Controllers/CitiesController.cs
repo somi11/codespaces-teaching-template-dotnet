@@ -27,5 +27,4 @@ public ActionResult GetCity(int id) {
 }
 
 }
-
 }

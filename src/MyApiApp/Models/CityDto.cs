@@ -1,4 +1,4 @@
-namespace MyApiApp
+namespace MyApiApp.Models
 {
     public class CityDto
     {
